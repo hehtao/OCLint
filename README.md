@@ -2,6 +2,7 @@
 # OCLint  Shell  代码审查脚本
 # 更多规则请参阅https://github.com/oclint/oclint
 脚本代码如下:
+
 xcodebuild clean
 xcodebuild -workspace=grid  -scheme=grid | xcpretty -r json-compilation-database
 cp build/reports/compilation_db.json compile_commands.json
