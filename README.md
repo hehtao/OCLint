@@ -1,5 +1,5 @@
-# OCLint
 # OCLint  Shell  代码审查脚本
+使用方法: 将 oclint.sh 拖进工程,在工程所在目录下终端执行 ./oclint.sh 即可,分析过程较慢,请耐心等待
 # 更多规则请参阅https://github.com/oclint/oclint
 脚本代码如下:
 
