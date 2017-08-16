@@ -3,11 +3,11 @@
 # 更多规则请参阅https://github.com/oclint/oclint
 脚本代码如下:
 
-xcodebuild clean
-xcodebuild -workspace=grid  -scheme=grid | xcpretty -r json-compilation-database
-cp build/reports/compilation_db.json compile_commands.json
-oclint-json-compilation-database -e Pods -- \
--report-type html \
+xcodebuild clean\
+xcodebuild -workspace=grid  -scheme=grid | xcpretty -r json-compilation-database\
+cp build/reports/compilation_db.json compile_commands.json\
+oclint-json-compilation-database -e Pods -- \\
+-report-type html \\
 -rc=LONG_VARIABLE_NAME=20 \
 -rc=ShortVariableName=4 \
 -rc=LONG_CLASS=700 \
