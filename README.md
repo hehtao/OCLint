@@ -8,16 +8,16 @@ xcodebuild -workspace=grid  -scheme=grid | xcpretty -r json-compilation-database
 cp build/reports/compilation_db.json compile_commands.json\
 oclint-json-compilation-database -e Pods -- \\
 -report-type html \\
--rc=LONG_VARIABLE_NAME=20 \
--rc=ShortVariableName=4 \
--rc=LONG_CLASS=700 \
--rc=LONG_METHOD=80 \
--rc=LONG_LINE=200 \
--rc=NCSS_METHOD=120 \
--rc=NESTED_BLOCK_DEPTH=5 \
--rc=TOO_MANY_FIELDS=20 \
--rc=TOO_MANY_METHODS=30 \
--rc=TOO_MANY_PARAMETERS=6 \
+-rc=LONG_VARIABLE_NAME=20 \\
+-rc=ShortVariableName=4 \\
+-rc=LONG_CLASS=700 \\
+-rc=LONG_METHOD=80 \\
+-rc=LONG_LINE=200 \\
+-rc=NCSS_METHOD=120 \\
+-rc=NESTED_BLOCK_DEPTH=5 \\
+-rc=TOO_MANY_FIELDS=20 \\
+-rc=TOO_MANY_METHODS=30 \\
+-rc=TOO_MANY_PARAMETERS=6 \\
 -o=report.html
 open ./report.html
 # --命名
